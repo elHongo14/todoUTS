@@ -10,8 +10,39 @@
 
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="my-5 text-center">ToDo - LEHM</h1>
+        <form id="formulario">
+            <input type="text" placeholder="Introduce la Tarea" class="form-control my-2">
+            <button class="btn btn-primary" style="width: 100%">Agregar</button>
+        </form>
+        <hr>
+        <div class="mt-2" id="lista-tareas">
+            <div class="alert alert-dark">
+                Sin Tareas Pendientes
+            </div> 
+        </div>
+    </div>
 
+<template id="template">
+    <div class="alert alert-warning 
+                d-flex 
+                justify-content-between 
+                align-content-center">
+        <p class="m-0">Tarea 1</p>
+        <h3 class="m-0">
+            <i class="fas fa-check-circle 
+                    text-success"
+                role="button"></i>
+
+            <i class="fas fa-minus-circle 
+                    text-danger"
+                role="button"></i>
+
+        </h3>
+    </div>
+</template>
+    
     <script src="./js/app.js"></script>
 </body>
 </html>
