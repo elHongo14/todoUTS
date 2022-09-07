@@ -38,7 +38,7 @@ const setTarea = e => {
         estado: false
     }
     //console.log('Tarea', tarea)
-    tarea[tarea.id] = tarea
+    tareas[tarea.id] = tarea
     pintarTareas()
     formulario.reset()
     e.target.querySelector('input').focus()
@@ -46,7 +46,7 @@ const setTarea = e => {
 
 const pintarTareas = () => {
     localStorage.setItem('tareas', JSON.stringify(tareas))
-    if (Object.values(tareas).lenght === 0){
+    if (Object.values(tareas).length === 0){
         listaTareas.innerHTML =
         `
             <div class="alert alert-dark">
