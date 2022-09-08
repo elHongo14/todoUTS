@@ -8,7 +8,7 @@ const fragment = document.createDocumentFragment()
 let tareas = {}
 
 document.addEventListener('DOMContentLoaded', ()  => {
-    console.log('Cargo la pagina')
+    console.log('Cargó la página')
     if(localStorage.getItem('tareas')){
         tareas = JSON.parse(localStorage.getItem('tareas'))
         pintarTareas()
@@ -29,7 +29,7 @@ const setTarea = e => {
     const texto = e.target.querySelector('input').value
     //console.log(texto)
     if(texto.trim() === ''){
-        console.log('Cadena vacia')
+        console.log('Cadena vacía')
         return
     }
     const tarea = {
